@@ -11,7 +11,9 @@ body {
 
 /* Header styles */
 header {
+    position: fixed;
     background-color: #333;
+    width: 100%;
     padding: 15px 0;
 }
 
@@ -20,9 +22,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin: 5 auto;
-    padding: 0 20px;
+    padding: 20px 20px;
 }
 
 /* Logo styling */
@@ -47,15 +48,41 @@ header {
     color: white;
     font-size: 18px;
     transition: 0.3s;
+    
 }
 
 .nav-links a:hover {
     color: #ffcc00;
 }
 
-.callout-title {
-    padding-top: 50px;
+.nav-links a.active {
+    color: #ffcc00;
+    font-weight: bold;
+    border-bottom: 2px solid;
+}
+
+.home-callout-title {
     display: flex;
+    padding-top: 200px;
+    padding-left: 20vw;
+    padding-right: 15vw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-callout-title img {
+    margin-right: 50px; /* Adjust spacing */
+    border-radius: 50%;
+}
+
+.projects-callout-title {
+    display: flex;
+    padding-top: 200px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
 }
+
