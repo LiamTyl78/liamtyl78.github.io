@@ -17,6 +17,12 @@ header {
     padding: 15px 0;
 }
 
+footer {
+    position: sticky;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
 /* Navigation styles */
 .menu {
     display: flex;
@@ -63,7 +69,7 @@ header {
 
 .home-callout-title {
     display: flex;
-    padding-top: 200px;
+    padding-top: 40vh;
     padding-left: 20vw;
     padding-right: 15vw;
     max-width: 100%;
@@ -78,10 +84,38 @@ header {
 
 .projects-callout-title {
     display: flex;
-    padding-top: 200px;
+    padding-top: 40vh;
     padding-left: 20vw;
     padding-right: 20vw;
     max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-body {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20vw;
+    padding-right: 15vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-callout-title {
+    display: flex;
+    padding-top: 40vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info-body {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20vw;
+    padding-right: 15vw;
     align-items: center;
     justify-content: center;
 }
