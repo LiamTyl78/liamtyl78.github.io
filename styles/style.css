@@ -68,9 +68,10 @@ footer {
 
 .home-callout-title {
     display: flex;
-    padding-top: 300px;
+    padding-top: 225px;
     padding-left: 20vw;
     padding-right: 15vw;
+    padding-bottom: 50px;
     max-width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -134,7 +135,7 @@ footer {
 .project-info-text {
     display: flex;
     flex-direction: column; 
-    text-align: left;
+    text-align: justify;
 
 }
 
@@ -192,11 +193,13 @@ footer {
 @media (max-width: 1500px) {
     .project-info-body {
         flex-direction: column !important;
+        
     }
 
     .project-info-text {
         margin-left: 20px;
         margin-right: 20px;
+        text-align: left;
     }
 
     img {
@@ -221,6 +224,7 @@ footer {
     .project-info-text{
         font-size: 18px;
         padding-bottom: 50px;
+        text-align: left;
     }
 
     .projects-home-callout-title{
