@@ -82,7 +82,7 @@ footer {
     border-radius: 50%;
 }
 
-.projects-callout-title {
+.projects-home-callout-title {
     display: flex;
     padding-top: 40vh;
     padding-left: 20vw;
@@ -92,13 +92,96 @@ footer {
     justify-content: center;
 }
 
-.projects-body {
+.project-info-callout-title {
     display: flex;
-    padding-top: 50px;
+    flex-direction: column;
+    padding-top: 150px;
     padding-left: 20vw;
-    padding-right: 15vw;
-    align-items: center;
+    padding-right: 20vw;
+    max-width: 1500px;
     justify-content: center;
+}
+
+.project-info-features-title {
+    display: flex;
+    padding-top: 5vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    max-width: 100%;
+}
+
+.project-info-body {
+    display: flex;
+    flex-direction: row; /* Keep image and text side by side */
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: center;
+}
+
+.project-info-body:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse order for even sections */
+}
+
+.project-info-text {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column; /* Stack text elements on top of each other */
+    text-align: left; /* Align text to the left */
+    margin-left: 20px; /* Add spacing between image and text */
+}
+
+@media (max-width: 1700px) {
+    .project-info-body {
+        flex-direction: column !important; /* Stack elements vertically */
+    }
+
+    .project-info-text {
+        margin-left: 0; /* Remove margin for better centering */
+    }
+
+    img {
+        max-width: 100%; /* Ensure the image resizes properly */
+        height: 100%;
+    }
+
+    
+}
+
+@media (max-width: 1133px){
+    .contact-callout-title{
+        font-size: 9px;
+    }
+    .contact-info-body{
+        font-size: 10px;
+        
+    }
+
+    .projects-home-callout-title{
+        font-size: 10px;
+    }
+
+    .project-info-body{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1000px){
+    .home-callout-title {
+        display: flex;
+        flex-direction: column !important;
+        padding-top: 20vh;
+        padding-left: 20vw;
+        padding-right: 15vw;
+        max-width: 100%;
+        font-size: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
 }
 
 .contact-callout-title {
