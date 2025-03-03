@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +8,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header styles */
 header {
     position: fixed;
-    background-color: #333;
+    background-color: #111111;
     width: 100%;
     padding: 15px 0;
+    z-index: 10;
 }
 
 footer {
@@ -23,7 +22,7 @@ footer {
     width: 100%;
 }
 
-/* Navigation styles */
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -32,14 +31,14 @@ footer {
     padding: 20px 20px;
 }
 
-/* Logo styling */
+
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: white;
 }
 
-/* Navigation Links */
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -69,7 +68,7 @@ footer {
 
 .home-callout-title {
     display: flex;
-    padding-top: 40vh;
+    padding-top: 40px;
     padding-left: 20vw;
     padding-right: 15vw;
     max-width: 100%;
@@ -78,7 +77,7 @@ footer {
 }
 
 .home-callout-title img {
-    margin-right: 50px; /* Adjust spacing */
+    margin-right: 50px;
     border-radius: 50%;
 }
 
@@ -96,54 +95,112 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 150px;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    max-width: 1500px;
+    padding-bottom: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
     justify-content: center;
+    color: white;
+    background-color: #232323;
+}
+
+.project-info-callout-title b {
+    max-width: 800px;
+    padding-bottom: 25px;
 }
 
 .project-info-features-title {
     display: flex;
     padding-top: 5vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     max-width: 100%;
 }
 
 .project-info-body {
     display: flex;
-    flex-direction: row; /* Keep image and text side by side */
-    align-items: center; /* Align items vertically */
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     padding-top: 20px;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     text-align: center;
 }
 
 .project-info-body:nth-child(even) {
-    flex-direction: row-reverse; /* Reverse order for even sections */
+    flex-direction: row-reverse;
 }
 
 .project-info-text {
     display: flex;
-    max-width: 500px;
-    flex-direction: column; /* Stack text elements on top of each other */
-    text-align: left; /* Align text to the left */
-    margin-left: 20px; /* Add spacing between image and text */
+    flex-direction: column; 
+    text-align: left;
+
 }
 
-@media (max-width: 1700px) {
+.project-button {
+    align-items: center;
+    max-width: 700px;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .project-button:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+  }
+  
+  .project-button:active {
+    outline: 0;
+  }
+  
+  .project-button:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+  }
+  
+  @media (max-width: 420px) {
+    .project-button {
+      height: 48px;
+    }
+  }
+  
+
+@media (max-width: 1500px) {
     .project-info-body {
-        flex-direction: column !important; /* Stack elements vertically */
+        flex-direction: column !important;
     }
 
     .project-info-text {
-        margin-left: 0; /* Remove margin for better centering */
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     img {
-        max-width: 100%; /* Ensure the image resizes properly */
+        max-width: 100%;
         height: 100%;
     }
 
@@ -156,11 +213,18 @@ footer {
     }
     .contact-info-body{
         font-size: 10px;
-        
+    }
+    .home-callout-title{
+        padding-bottom: 50px;
+    }
+
+    .project-info-text{
+        font-size: 18px;
+        padding-bottom: 50px;
     }
 
     .projects-home-callout-title{
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .project-info-body{
@@ -172,7 +236,7 @@ footer {
     .home-callout-title {
         display: flex;
         flex-direction: column !important;
-        padding-top: 20vh;
+        padding-top: 150px;
         padding-left: 20vw;
         padding-right: 15vw;
         max-width: 100%;
